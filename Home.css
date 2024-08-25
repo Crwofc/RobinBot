@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;700&display=swap');
+
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Informations */
+.Background {
+  width: 100%;
+  background: #e4e4e4;
+}
+
+main {
+  background: #252525;
+  color: #ffffff;
+  fill: #fff;
+  overflow: hidden;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  background: transparent;
+}
+
+.nav .navMenu a {
+  color: #ffffffbc;
+}
+
+
+.nav #logo {
+  color: #ffffff;
+}
+
+.nav-scrolled {
+  background: #000;
+}
+
+.nav-scrolled .navMenu a {
+  color: #ffffffbc;
+}
+
+.nav-scrolled .navMenu li:hover {
+  color: #ffffff;
+}
+
+.nav-scrolled #logo {
+  color: #ffffff;
+}
+
+/*initial infos*/
+
+
+.home-data {
+  position: relative;
+  padding-top: 80px;
+  z-index: 100;
+  top: 0;
+  background: linear-gradient(120deg, #25263c, #13132a);
+  width: 100%;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  color: #ffffff;
+}
+
+.initial-info {
+  position: relative;
+  z-index: 10;
+}
+
+.home-data section {
+  height: 95vh;
+  padding-top: 10vh;
+  background-size: 30%;
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.home-data img {
+  position: absolute;
+  height: 90vh;
+  bottom: 0;
+  right: 5%;
+  z-index: 1;
+}
+
+.home-data svg {
+  fill: #fff;
+}
+
+.home-data h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+  max-width: 55%;
+  margin-left: 15vh;
+}
+
+.home-data h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2.8vh;
+  max-width: 40%;
+  margin: 3vh 0 0 15vh;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.home-data h2 {
+  margin-left: 15vh;
+  font-weight: 500;
+  font-size: 10vh;
+  text-shadow: 2px 2px 15px #00000086;
+  color: #ffff3a;
+  font-family: 'Luckiest Guy', cursive;
+  line-height: 1;
+}
+
+
+.home-data .buttons {
+  width: 40%;
+  margin-left: 15vh;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.home-data .buttons a {
+  width: 30%;
+  margin: 2vh 0;
+  margin-right: 2.5%;
+}
+
+.home-data .buttons button {
+  min-width: 100%;
+  border: none;
+  border-radius: 15px;
+  height: 7vh;
+  font-size: 2.4vh;
+  color: #fff;
+  transition: 0.8s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.home-data .buttons button svg {
+  height: 3vh;
+}
+
+.home-data .buttons .invite {
+  background: #cc8500;
+}
+
+.home-data .buttons button:hover {
+  opacity: 0.7;
+}
+
+.home-data .buttons .login {
+  background: rgb(255, 255, 255, .2);
+}
+
+
+.waves-div {
+  fill: #792121;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  bottom: -0.5vh;
+  z-index: 150;
+  z-index: 1;
+}
+
+/*status*/
+
+.status {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 30vh;
+  padding: 5vh 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.status .status-division {
+  text-align: center;
+}
+
+.status .status-division svg {
+  height: 8.5vh;
+  width: 8.5vh;
+  fill: #ffff3a;
+}
+
+.status .status-division .status-info {
+  font-size: 5vh;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1vh 0;
+}
+
+.status .status-division .status-name {
+  font-size: 3.2vh;
+  font-weight: 400;
+}
+
+.status .status-division .status-name span {
+  display: block;
+  opacity: 0.7;
+  font-size: 2.5vh;
+}
+
+.info {
+  width: 80%;
+  min-height: 30vh;
+  padding-bottom: 5vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.info .disabled-images-mobile {
+  display: none;
+}
+
+.info .disabled-images-pc {
+  display: block;
+}
+
+.info-text {
+  width: 55%;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info-text p {
+  font-size: 2.2vh;
+}
+
+.info-text .info-title {
+  font-size: 5.5vh;
+  font-weight: 600;
+  padding-bottom: 2.5vh;
+}
+
+.info-text .button-ref {
+  min-width: 25%;
+  padding: 0.5vh 2.5%;
+  height: 7vh;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #cc8500, #cc9600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin: 1.5vh 0;
+  color: #fff;
+  font-size: 2.2vh;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity .3s linear;
+  text-wrap: nowrap;
+}
+
+.info-text .button-ref:hover {
+  opacity: 0.7;
+}
+
+.info-text .button-ref svg {
+  height: 2.5vh;
+  width: 2.5vh;
+  vertical-align: middle;
+  fill: #fff;
+  margin-left: 2.5%;
+}
+
+.info-images {
+  position: relative;
+  min-height: 45vh;
+  width: 40%;
+  padding: 0 2.5%;
+  vertical-align: top;
+}
+
+.embeds {
+  display: flex;
+  align-items: center;
+}
+
+.info-ticket-embed {
+  width: 80%;
+  padding: 2.5vh 5%;
+  margin: 0 auto;
+  min-height: 10vh;
+  border-radius: 5px;
+  border-left: 3px yellow solid;
+  background: #2b2d31;
+  box-shadow: 1px 1px 5px #00000049;
+}
+
+.ticket-button {
+  width: 30%;
+  height: 6vh;
+  background: #4b545b;
+  border: none;
+  margin: 2.5vh 5%;
+  border-radius: 5px;
+  font-size: 2.5vh;
+  color: #fffcf5;
+  font-weight: 600;
+}
+
+.info-ticket-embed h1 {
+  font-size: 2vh;
+  font-weight: 600;
+  padding-bottom: 3vh;
+}
+
+.info-ticket-embed .info-ticket-embed-desc {
+  font-size: 2.2vh;
+  font-weight: 400;
+  padding-bottom: 3vh;
+}
+
+.info-ticket-embed .embed-footer {
+  display: flex;
+  align-items: center;
+}
+
+.info-ticket-embed .embed-footer img {
+  width: 4vh;
+  height: 4vh;
+  border-radius: 50%;
+}
+
+.info-ticket-embed .embed-footer p {
+  font-size: 1.8vh;
+  padding-left: 2.5%;
+}
+
+
+@keyframes movUp {
+  0% {
+    padding-top: 0vh;
+  }
+
+  100% {
+    padding-top: 5vh;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .home-data img {
+    display: none;
+  }
+
+  .info .disabled-images-mobile {
+    display: block;
+  }
+  
+  .info .disabled-images-pc {
+    display: none;
+  }
+
+  .home-data h4,
+  .home-data h3,
+  .home-data h2 {
+    max-width: 70%;
+  }
+
+  .home-data .buttons {
+    width: 60%;
+  }
+
+  .info-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-text p {
+    font-size: 2.8vh;
+  }
+
+  .info-images {
+    position: relative;
+    width: 100%;
+    min-height: 55vh;
+    padding-bottom: 5vh;
+    padding-top: 2.5vh;
+    display: block;
+  }
+
+  .info-text .button-ref {
+    margin: 1.5vh auto;
+  }
+
+  .info {
+    position: relative;
+    width: 95%;
+    display: block;
+  }
+
+  .info-text {
+    padding: 5vh 0;
+  }
+
+  .info-images .moba-70 {
+    width: 70% !important;
+  }
+
+  .info-images .moba-h-50 {
+    width: 100% !important;
+    margin-bottom: 2.5vh;
+  }
+
+  .info-images .moba-15 {
+    width: 20% !important;
+    margin: 0;
+  }
+
+  .disabled-images {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .home-data h2 {
+    display: none;
+  }
+
+  .home-data h4 {
+    font-size: 6vh;
+    line-height: 1.2;
+    max-width: 100%;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+  }
+
+  .home-data h3 {
+    font-size: 2.8vh;
+  }
+
+  .home-data .buttons {
+    width: 90%;
+    height: 20vh;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .home-data .buttons a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+  }
+
+  .home-data .buttons button {
+    width: 100% !important;
+  }
+
+  .home-data {
+    width: 100%;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    padding: 0;
+  }
+
+  .home-data section {
+    padding-top: calc(50px + 5%);
+    height: 95vh;
+  }
+
+  .home-data h3 {
+    text-align: center;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .home-data h2 {
+    text-align: center;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+
+  .waves-div {
+    fill: #792121;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .status {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-column-gap: 1.5%;
+  }
+
+  .status .status-division {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1.5vh 5%;
+  }
+
+  .home-data img {
+    display: none;
+  }
+
+  .home-data .buttons button {
+    margin: 2vh 1.5%;
+    vertical-align: top;
+    height: 10vh;
+    width: 45%;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: 0.8s;
+    cursor: pointer;
+  }
+
+  .home-data .buttons button svg {
+    display: none;
+  }
+
+  .nav {
+    background: #000;
+  }
+
+  .nav #logo {
+    color: #fff !important;
+  }
+}
